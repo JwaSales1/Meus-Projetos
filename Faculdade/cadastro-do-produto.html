@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+  
+
+
+
+        
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="marcação.js">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <header>
+             <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Abrir</a>
+        </header>
+           
+           
+        <nav id="menu">
+            <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+            <a href="home.html">Home</a>
+            <a href="cadastro-do-produto.html">Cadastro de Produto</a>
+            <a href="cadastro-de-compras.html">Cadastro de Compras</a>
+            <a href="histórico-compras.html">Histórico de Compras</a>
+            <a href="cadastros-de-vendas.html">Cadastro de Vendas</a>
+            <a href="historico-de-vendas.html">Histórico de Vendas</a>
+    
+            
+    
+    
+        </nav>
+    
+    
+        <main id="conteudo">
+                  <!-- Cadastro -->
+
+            <fieldset class="produtos">
+                <legend class="topo">Cadastro dos Produtos</legend>
+
+                <label for="produto">Produto</label>
+                <input type="text" name="prod" id="produto"><br><br>
+
+                <label for="email">ID produto</label>
+                <input type="number" name="ID produto" id="ID produto"><br><br>
+    
+                <label for="Quantidade">Quantidade</label> 
+                <input type="number" name="Quantidade" id="Quantidade"><br><br>
+
+                <label for="Valor">Valor custo</label>
+                <input type="number" name="valor-do-produto" id="valor">
+
+            </fieldset>
+      
+    <!-- Botão 1 -->
+    <div class="botão2">
+    
+        <button><a href="salvar"></a>Salvar</button>
+        <button><a href=cancelar></a>Cancelar</button>
+    </div>
+   
+    <!-- Botão 2 -->
+
+    <div class="botão3">
+        <button><a href="pesquisar"></a>Pesquisar</button>
+        <button><a href="novo"></a>Novo</button>
+        <button><a href="editar"></a>Editar</button>
+        <button><a href="deletar"></a>deletar</button>
+    </div>
+
+    <table>
+        <tr>
+            <th>
+                Id produto
+            </th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Valor custo</th>
+            <th>Valor venda</th>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>Aparelhos para pelling</td>
+            <td>5</td>
+            <td>150,00</td>
+            <td>200,00</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Máquina de esterilização</td>
+            <td>10</td>
+            <td>160,00</td>
+            <td>220,00</td>
+        </tr>
+    </table>
+        </main>
+        
+        <script>
+            function abrirMenu(){
+                document.getElementById('menu').style.width = '250px';
+                document.getElementById('conteudo').style.marginLeft = '250px';
+                   
+            }
+    
+            function fecharMenu(){
+                document.getElementById('menu').style.width = '0px';
+                document.getElementById('conteudo').style.marginLeft = '0px';
+            }
+        </script>
+    
+    
+    </body>
+    </html>

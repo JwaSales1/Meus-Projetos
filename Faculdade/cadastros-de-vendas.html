@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Abrir</a>
+   </header>
+      
+      
+   <nav id="menu">
+       <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+       <a href="home.html">Home</a>
+       <a href="cadastro-do-produto.html">Cadastro de Produto</a>
+       <a href="cadastro-de-compras.html">Cadastro de Compras</a>
+       <a href="histórico-compras.html">Histórico de Compras</a>
+       <a href="cadastros-de-vendas.html">Cadastro de Vendas</a>
+       <a href="historico-de-vendas.html">Histórico de Vendas</a>
+
+       
+
+
+   </nav>
+
+
+   <main id="conteudo">
+        <fieldset>
+            <label for="venda"> Id venda</label>
+            <input type="text" name="Id venda" id="venda">
+            <br><br>
+            <label for="Cliente">Cliente</label>
+            <input type="text" name="cliente" id="cliente"> <br><br>
+
+            <label for="Valor total venda">Valor total venda</label> 
+            <input type="text" name="total" id="total"> <br><br>
+        
+            <label for="fonma de pagamento" >Forma de pagamento</label>
+            <input type="radio" name="pagamento" id="pagamento"> Cartão de crédito 
+            <input type="radio" name="pagamento" id="pagamento"> Cartão de Débito  
+            <input type="radio" name="pagamento" id="pagamento"> Pix 
+            <input type="radio" name="pagamento" id="pagamento"> Dinheito
+    
+
+    </fieldset>
+
+    <fieldset>
+        <button>Salvar</button>
+        <button>Cancelar</button>
+    </fieldset>
+
+       
+   </main>
+   
+   <script>
+       function abrirMenu(){
+           document.getElementById('menu').style.width = '250px';
+           document.getElementById('conteudo').style.marginLeft = '250px';
+              
+       }
+
+       function fecharMenu(){
+           document.getElementById('menu').style.width = '0px';
+           document.getElementById('conteudo').style.marginLeft = '0px';
+       }
+   </script>
+
+
+
+</body>
+</html>

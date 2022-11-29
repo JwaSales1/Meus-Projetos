@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* home */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+header{
+    background: rgb(197, 10, 197);
+    padding: 10px;
+}
+
+.btn-abrir{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+nav{
+    height: 100%;
+    width: 0px;
+    background-color: rgb(197, 10, 197);;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+nav a {
+    color: aliceblue;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
+
+nav a:hover{
+    color: rgb(198, 151, 241);
+    background-color:rgb(110, 17, 110);
+}
+
+main{
+    padding: 20px;
+    transition: margin-left 0.5s;
+}
+
+button{
+    padding: 10px 10px;
+    color: blueviolet;
+    border: 1px solid purple;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5;
+
+}
+
+button:hover{
+    background-color: rgb(163, 197, 228);
+    color: blueviolet;
+}
+
+
+/* Cadastro-de-produtos */
+
+body{
+    background-color: rgb(171, 228, 230);
+}
+
+.produtos{
+    width: 1050px;
+    text-align: center;
+    height: 300px;
+    padding: 15px 25px 25px;
+    
+    
+}
+
+label{
+    width: 80px;
+    display: inline-block; 
+    padding: 15px;
+    
+}
+
+fieldset{
+    padding: 10px;
+}
+
+.botão2{
+    padding: 30px;
+    text-align: center;
+    transform: translate(5px);
+}
+
+.botão3{
+    padding: 10px;
+}
+
+table th, td{
+    border: 1px solid purple;
+    border-collapse: collapse;
+
+}
+
+th, td{
+    padding: 5px 10px;
+}
+
+th{
+    background-color: palevioletred ;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aplicados a todos os elementos ímpares */
+table tr:nth-child(odd){
+    background-color: #ddd;
+}
+
+/* Aplicado a todos os elementos pares */
+table tr:nth-child(even){
+    background-color: #fff;
+}
+
+/* Cadastro de compras */
+
+.cad{
+    width: 1050px;
+    text-align: center;
+    height: 300px;
+    padding: 15px 25px 25px;
+    
+}
+
+label{
+    width: 90px;
+    display: inline-block; 
+    padding: 9px;
+    
+}
+
+fieldset{
+    padding: 10px;
+}
+
+#click{
+padding: 10px 10px;
+    color: blueviolet;
+    border: 1px solid purple;
+    cursor: pointer;
+    transition: 0.5;
+    
+
+}
+
+button:hover{
+    background-color: rgb(163, 197, 228);
+    color: blueviolet;
+}
+
+/* Histórico de Compras */
+#table2{
+
+    padding: 15pc;
+}
+
+/* Cadastro-de-vendas */
+
+/* Histórico de vendas */
+
+legend{
+    text-align: center;
+}

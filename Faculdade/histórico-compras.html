@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Abrir</a>
+   </header>
+      
+      
+   <nav id="menu">
+       <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+       <a href="home.html">Home</a>
+       <a href="cadastro-do-produto.html">Cadastro de Produto</a>
+       <a href="cadastro-de-compras.html">Cadastro de Compras</a>
+       <a href="histórico-compras.html">Histórico de Compras</a>
+       <a href="cadastros-de-vendas.html">Cadastro de Vendas</a>
+       <a href="historico-de-vendas.html">Histórico de Vendas</a>
+
+       
+
+
+   </nav>
+
+
+   <main id="conteudo">
+      
+    <label for="valor">ID compras</label> 
+    <input type="number" name="compras" id="compras">
+
+    <label for="fornecedor">Fornecedor</label>
+    
+    <input type="text" name="fornecedor" id="fornecedor">
+    
+    <label for="data">Data compra</label>
+    <input type="date" name="mes" id="mes">
+    
+    <label for="valor">Valor Total</label> 
+    <input type="number" name="valor" id="valor">
+
+    <!-- Botões -->
+
+    <button>Pesquisa</button>
+    <button>Novo</button>
+    <button>Editar</button>
+    <button>Deletar</button>
+
+    <!-- Tabelas -->
+    
+    
+    <div id="table2">
+    <table>
+        <tr>
+            <th>
+                Id Compra
+            </th>
+            <th>Fornecedor</th>
+            <th>Data compra</th>
+            <th>Valor total</th>
+            
+        </tr>
+
+        <tr>
+            <td>15</td>
+            <td>Black aesthetics</td>
+            <td>13/05</td>
+            <td>7.500,00</td>
+            
+        </tr> 
+    </table>
+    </div>
+
+    
+   </main>
+   
+   <script>
+       function abrirMenu(){
+           document.getElementById('menu').style.width = '250px';
+           document.getElementById('conteudo').style.marginLeft = '250px';
+              
+       }
+
+       function fecharMenu(){
+           document.getElementById('menu').style.width = '0px';
+           document.getElementById('conteudo').style.marginLeft = '0px';
+       }
+   </script>
+
+</body>
+</html>

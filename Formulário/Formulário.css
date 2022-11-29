@@ -1,0 +1,21 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    font-size: helvetica, sans-serif, georgia ;
+    background: rgb(187, 246, 187);
+    
+    
+}
+
+
+.topo{
+    animation: digitando 2s step(50);
+    cursor:  .5 step-end infinite alternate;
+
+}
+
+
+.descricão{
+
+
+}
