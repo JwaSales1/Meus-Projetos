@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@400;500&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+   
+    
+}
+
+body{
+    background-image: linear-gradient(90deg, orange, red, yellow);
+
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 5pc;
+    transform: translate(0px, 150px);
+   
+   
+
+}
+
+.title span{
+    color: #fff;
+}
+
+
+/*Navegação*/
+
+ul{
+   color: crimson;
+}
+
+ul li{
+    list-style: none;
+    float: left;
+
+}
+
+ul a{
+    display: block;
+    line-height: 2em;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    transform: translate(100pc, -11pc);
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+a:link{
+    color: rgb(12, 26, 17);
+}
+
+a:visited{
+    color: rgba(111, 6, 248, 0.993);
+}
+
+ul a:hover{
+    background-color: rgb(238, 121, 121);
+    transition: 0.2s;
+}
+
+
+/*article*/
+
+.texto1{
+    color: rgb(49, 47, 47);
+    font-size: 1.3pc;
+    width: 80pc;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    top: center;
+    transform: translate(0px, 200px);
+
+}
+
+
+
+/*Imagens*/
+
+.imagens{
+    display: grid;
+    grid-template-rows: 20%px 80px 60px;
+    align-items: center;
+    transform: translate(200px);
+    
+   
+}
+.lado{
+    transform: translate(600px, 400px);
+    
+}
+
+figure{
+    color: rgb(66, 66, 61);
+}
+
+.esquerdo{
+    transform: translate(0px, -215px);
+}
+
+
+
+
+.rodape{
+   
+   position: absolute;
+   transform: translate(50pc);
+   
+}
+
+
+.btn{
+   transform: translate(-800px, -200px);
+   float: right;
+   margin: 5px;
+   padding: 0.5% 0.5% 0.5% 0.5%;
+   cursor:pointer;   
+   
+                                          
+}
+
+button{
+    border-radius: 15px;
+}
+
+button a{
+    text-decoration: none;
+    color: rgb(212, 0, 255);
+    font-size: 20px;
+   
+    
+   
+}
+ 
+button:hover{
+    background: rgb(221, 5, 16);
+    transition: background 2s ;
+}
+
+/*Sobre*/
+
+.navegacao-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title2{
+    width: 600px;
+    transform: translate(10px, 300px);
+    text-align: center;
+
+
+}
+
+.texto2{
+    width: 800px;
+    position: absolute;
+    top: 65%;
+    transform: translate(100px);
+}
+
+.video{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+
+.mapa{
+    transform: translate(600px, 600px);
+
+}
+
+.Rodape-sobre{ 
+        position: absolute;
+        transform: translate(50pc, 50pc);
+        
+    
+
+}
+
+.btn-sobre{
+    position:absolute;
+    transform: translate(50pc, 40pc);
+    cursor:pointer
+}
+
+/*Contato*/
+
+.contato{
+    display: flex;
+    transform: translate(0px, 20pc);
+    padding: 10px;
+    
+}
+
+.title3{
+     position: absolute;
+     transform: translate(620px);
+
+
+}
+
+.paragrafo{
+    position: absolute;
+    transform: translate(35pc, 100px);
+    padding: 10px;
+    font-size: 1.5pc;
+
+}
+
+.atendimento{
+    position: absolute;
+    align-items: center;
+    top: 100%;
+    left: 50%;
+}
+
+form{
+    position: absolute;
+    align-items: center;
+    top: 105%;
+    left: 35%; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    width: 500px;
+    max-width: 100%;
+    overflow: hidden;
+   
+}
+#cliente{
+    background-color: #ebdede;
+    padding: 20px 23% 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+   
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control i{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden ;
+}
+
+form button{
+    background-image:  linear-gradient(90deg, orange, red, yellow);
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control.sucess input label{
+    border-color: greenyellow;
+}
+
+.form-control.error input label{
+    border-color: red;
+}
+
+.form-control.i.fa-check-cicle{
+    color: greenyellow;
+    visibility: visible;
+}
+
+.form-control.i.fa-check-cicle{
+    color: red;
+    visibility: visible;
+}
+
+.form-control.error smal{
+    visibility: visible;
+    color: red;
+}
+
+.Rodape-contato{ 
+    position: absolute;
+    transform: translate(50pc, 75pc);
+}
